@@ -1,6 +1,9 @@
 // util function that computes the fibonacci numbers
 module.exports = function fibonacci(n) {
-  if (n < 0) {
+  if(Number.isInteger(n) == false){
+    return -1;
+  }
+  else if (n < 0) {
     return -1;
   } else if (n == 0) {
     return 0;
